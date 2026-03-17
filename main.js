@@ -1,3 +1,24 @@
+/* ── HERO WORD CYCLE ─────────────────────────────────────── */
+(function() {
+  const words = ['BUILD', 'DESIGN', 'CREATE', 'LAUNCH'];
+  let idx = 0;
+  const el = document.getElementById('hero-cycle-word');
+  if (!el) return;
+
+  setInterval(() => {
+    el.classList.add('cycling-out');
+    setTimeout(() => {
+      idx = (idx + 1) % words.length;
+      el.textContent = words[idx];
+      el.classList.remove('cycling-out');
+      el.classList.add('cycling-in');
+      requestAnimationFrame(() => requestAnimationFrame(() => {
+        el.classList.remove('cycling-in');
+      }));
+    }, 260);
+  }, 2600);
+})();
+
 /* ── CURSOR ─────────────────────────────────────────────── */
 const dot = document.getElementById('cursor-dot');
 const ring = document.getElementById('cursor-ring');
