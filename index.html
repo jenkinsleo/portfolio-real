@@ -1,0 +1,879 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Leo — Designer & Builder</title>
+  <meta name="description" content="Portfolio of Leo — GBDA student, UX designer, agency founder. Based in Calgary, AB." />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+</head>
+<body>
+
+<!-- CURSOR -->
+<div id="cursor-dot"></div>
+<div id="cursor-ring"></div>
+
+<!-- PAGE TRANSITION -->
+<div id="page-transition"></div>
+
+<!-- ══════════════════════════════════════════════════════════
+     NAVIGATION
+═══════════════════════════════════════════════════════════ -->
+<nav id="nav">
+  <a href="#home" class="nav-logo" data-page-link="home">
+    <span></span>LEO
+  </a>
+  <ul class="nav-links">
+    <li><a href="#home"     data-page="home"     class="active">Home<span class="nav-indicator"></span></a></li>
+    <li><a href="#work"     data-page="work">Work<span class="nav-indicator"></span></a></li>
+    <li><a href="#ventures" data-page="ventures">Ventures<span class="nav-indicator"></span></a></li>
+    <li><a href="#about"    data-page="about">About<span class="nav-indicator"></span></a></li>
+    <li><a href="#contact"  data-page="contact" class="nav-cta">Get in Touch</a></li>
+  </ul>
+</nav>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: HOME
+═══════════════════════════════════════════════════════════ -->
+<div id="page-home" class="page">
+
+  <!-- HERO -->
+  <section id="hero">
+    <div class="hero-grid-bg"></div>
+    <div class="hero-blue-orb"></div>
+    <div class="container">
+      <div class="hero-content">
+
+        <div class="hero-eyebrow hero-stagger reveal" style="opacity:0;transform:translateY(20px)">
+          <div class="hero-eyebrow-line"></div>
+          <span class="hero-eyebrow-text">Designer &amp; Builder — Calgary, AB</span>
+        </div>
+
+        <div class="hero-name hero-stagger reveal reveal-delay-1" style="opacity:0;transform:translateY(20px)">
+          <span class="hero-scramble">LEO</span>
+          <span class="line-2">PORTFOLIO</span>
+        </div>
+
+        <div class="hero-meta hero-stagger reveal reveal-delay-2" style="opacity:0;transform:translateY(20px)">
+          <p class="hero-desc">
+            GBDA student at the University of Waterloo. UX designer, brand strategist,
+            and founder of two marketing ventures. I build digital things that work —
+            and make them look good doing it.
+          </p>
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-num">4</div>
+              <div class="stat-label">Case Studies</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">2</div>
+              <div class="stat-label">Ventures</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-num">3Y</div>
+              <div class="stat-label">Experience</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- TICKER -->
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <div class="ticker-item"><span class="ticker-text">UX DESIGN</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">BRAND STRATEGY</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">DIGITAL MARKETING</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">OUTBOUND SYSTEMS</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">AI-POWERED CONTENT</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">WEB DESIGN</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">AUTOMATION</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">GBDA — WATERLOO</span><span class="ticker-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- FEATURED PROJECTS -->
+  <section>
+    <div class="container">
+      <div class="work-grid-header reveal">
+        <div>
+          <div class="section-label">Selected Work</div>
+          <h2 class="display-lg">Featured<br>Projects</h2>
+        </div>
+        <div class="work-count">04</div>
+      </div>
+
+      <div class="project-list">
+        <div class="project-row reveal reveal-delay-1" data-project="homescapes">
+          <span class="project-num">01</span>
+          <span class="project-name">Homescapes Website</span>
+          <div class="project-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">UX</span>
+          </div>
+          <div class="project-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="project-row reveal reveal-delay-2" data-project="vinnies">
+          <span class="project-num">02</span>
+          <span class="project-name">Vinnie's Brand Redesign</span>
+          <div class="project-tags">
+            <span class="tag">Branding</span>
+            <span class="tag">Identity</span>
+          </div>
+          <div class="project-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="project-row reveal reveal-delay-3" data-project="rentify">
+          <span class="project-num">03</span>
+          <span class="project-name">Rentify App Design</span>
+          <div class="project-tags">
+            <span class="tag">App Design</span>
+            <span class="tag">UX Research</span>
+          </div>
+          <div class="project-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+        <div class="project-row reveal reveal-delay-4" data-project="magazine">
+          <span class="project-num">04</span>
+          <span class="project-name">Magazine Design</span>
+          <div class="project-tags">
+            <span class="tag">Editorial</span>
+            <span class="tag">Typography</span>
+          </div>
+          <div class="project-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <div style="display:flex;justify-content:center;margin-top:56px;" class="reveal">
+        <a href="#work" data-page-link="work" class="btn btn-outline">
+          View All Work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- VENTURES STRIP -->
+  <div class="ventures-strip">
+    <div class="container">
+      <div class="section-label reveal" style="margin-bottom:40px;">Business Ventures</div>
+      <div class="ventures-grid reveal">
+        <div class="venture-cell">
+          <div class="venture-type">Marketing Agency · Alberta Inc.</div>
+          <div class="venture-name">Outdone<br>Marketing</div>
+          <p class="venture-desc">
+            Database reactivation and outbound marketing for contractors and
+            small businesses. Cold email, SMS, and automated lead systems
+            targeting roofing and exterior home services across Canada.
+          </p>
+          <a href="#ventures" data-page-link="ventures" class="venture-link">
+            Learn More →
+          </a>
+        </div>
+        <div class="venture-cell">
+          <div class="venture-type">Field Service Operations</div>
+          <div class="venture-name">TRP<br>Maintenance</div>
+          <p class="venture-desc">
+            Operational venture focused on residential maintenance and build
+            services. Foundation for developing client acquisition systems
+            and service delivery frameworks later applied at Outdone.
+          </p>
+          <a href="#ventures" data-page-link="ventures" class="venture-link">
+            Learn More →
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- CALL TO ACTION -->
+  <div class="home-cta reveal">
+    <div class="container">
+      <p class="home-cta-sub">Available for Co-op — Fall 2026</p>
+      <h2>Let's build<br>something <em>great</em><br>together.</h2>
+      <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
+        <a href="#work" data-page-link="work" class="btn btn-primary">
+          See My Work
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+        <a href="#contact" data-page-link="contact" class="btn btn-outline">
+          Get in Touch
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: WORK
+═══════════════════════════════════════════════════════════ -->
+<div id="page-work" class="page">
+
+  <div class="container">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-title-wrap">
+          <div class="section-label">Portfolio</div>
+          <h1 class="display-xl reveal">Selected<br>Work</h1>
+        </div>
+        <p class="page-hero-desc reveal reveal-delay-2">
+          A collection of design, branding, and UX projects — ranging from
+          website redesigns and mobile apps to brand identities and editorial
+          layouts.
+        </p>
+      </div>
+    </div>
+
+    <div class="work-filter reveal">
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Design</button>
+      <button class="filter-btn" data-filter="branding">Branding</button>
+      <button class="filter-btn" data-filter="app">App Design</button>
+      <button class="filter-btn" data-filter="editorial">Editorial</button>
+    </div>
+
+    <div class="projects-grid" style="margin-top:0;border-top:none;">
+
+      <!-- PROJECT 1: HOMESCAPES -->
+      <div class="project-card featured reveal" data-category="web">
+        <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%;">
+          <div>
+            <div class="project-card-num">01 — Web Design</div>
+            <div style="height:16px;"></div>
+            <div class="project-card-title" style="font-size:40px;margin-bottom:16px;">Homescapes<br>Website Redesign</div>
+            <p class="project-card-desc">
+              A full redesign of a real estate discovery platform — improving
+              property search UX, streamlining the booking flow, and building
+              a design system from scratch. Focus on conversion and clarity.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
+              <span class="tag tag-blue">Web Design</span>
+              <span class="tag">UX</span>
+              <span class="tag">Design System</span>
+              <span class="tag">Figma</span>
+            </div>
+          </div>
+          <div class="project-card-footer">
+            <span class="project-card-year">2024</span>
+            <a href="#" class="btn btn-primary" style="padding:10px 20px;">
+              View Case Study
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="project-card-img" style="height:100%;min-height:320px;">
+          <div class="project-card-img-inner" style="background: linear-gradient(135deg, #0e1428 0%, #1a2540 50%, #0a0f1e 100%);">
+            <div style="text-align:center;">
+              <div style="font-family:var(--font-display);font-size:28px;letter-spacing:0.06em;color:rgba(255,255,255,0.15);margin-bottom:8px;">HOMESCAPES</div>
+              <div style="width:80px;height:2px;background:var(--blue);margin:0 auto 16px;"></div>
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 24px;">
+                <div style="height:48px;background:rgba(255,255,255,0.05);border-radius:3px;border:1px solid rgba(255,255,255,0.08);"></div>
+                <div style="height:48px;background:rgba(46,107,255,0.2);border-radius:3px;border:1px solid rgba(46,107,255,0.3);"></div>
+                <div style="height:32px;background:rgba(255,255,255,0.04);border-radius:3px;"></div>
+                <div style="height:32px;background:rgba(255,255,255,0.04);border-radius:3px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 2: VINNIES -->
+      <div class="project-card reveal reveal-delay-1" data-category="branding">
+        <div class="project-card-num">02 — Branding</div>
+        <div class="project-card-img">
+          <div class="project-card-img-inner" style="background:linear-gradient(150deg,#1a0a08 0%,#2d1008 50%,#0a0a0c 100%);">
+            <div style="text-align:center;">
+              <div style="font-family:var(--font-serif);font-style:italic;font-size:36px;color:rgba(255,255,255,0.18);">Vinnie's</div>
+              <div style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,100,50,0.4);margin-top:6px;">Italian Market</div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-title">Vinnie's Brand Redesign</div>
+        <p class="project-card-desc">
+          Full rebrand of Vincenzo's Italian grocery to "Vinnie's" — targeting Gen Z
+          with authentic, family-oriented visual identity. Included AI-generated
+          social video content strategy using Veo and Kling.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="tag tag-blue">Branding</span>
+          <span class="tag">Identity</span>
+          <span class="tag">Social Strategy</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="project-card-year">2025</span>
+          <div class="project-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 3: RENTIFY -->
+      <div class="project-card reveal reveal-delay-2" data-category="app">
+        <div class="project-card-num">03 — App Design</div>
+        <div class="project-card-img">
+          <div class="project-card-img-inner" style="background:linear-gradient(135deg,#060c18 0%,#0d1a30 50%,#06090f 100%);">
+            <div style="display:flex;gap:6px;align-items:center;justify-content:center;">
+              <div style="width:60px;height:100px;background:rgba(255,255,255,0.05);border-radius:8px;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
+                <div style="width:40px;height:4px;background:rgba(46,107,255,0.5);border-radius:2px;"></div>
+              </div>
+              <div style="width:70px;height:120px;background:rgba(255,255,255,0.07);border-radius:8px;border:1px solid rgba(46,107,255,0.25);display:flex;flex-direction:column;gap:6px;padding:10px 8px;align-items:center;">
+                <div style="width:100%;height:4px;background:rgba(46,107,255,0.4);border-radius:2px;"></div>
+                <div style="width:80%;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;"></div>
+                <div style="width:90%;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;"></div>
+              </div>
+              <div style="width:60px;height:100px;background:rgba(255,255,255,0.05);border-radius:8px;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
+                <div style="width:40px;height:4px;background:rgba(46,107,255,0.3);border-radius:2px;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-title">Rentify App Design</div>
+        <p class="project-card-desc">
+          End-to-end mobile app design for a rental property platform. Includes
+          UX research, user flows, wireframes, and hi-fi prototypes. Emphasizes
+          trust signals and streamlined tenant onboarding.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="tag tag-blue">App Design</span>
+          <span class="tag">UX Research</span>
+          <span class="tag">Prototyping</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="project-card-year">2024</span>
+          <div class="project-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- PROJECT 4: MAGAZINE -->
+      <div class="project-card reveal reveal-delay-3" data-category="editorial">
+        <div class="project-card-num">04 — Editorial</div>
+        <div class="project-card-img">
+          <div class="project-card-img-inner" style="background:#f0ede8;">
+            <div style="text-align:center;padding:16px;">
+              <div style="font-family:'Bebas Neue',sans-serif;font-size:40px;color:#0a0a0c;letter-spacing:0.04em;line-height:0.9;">TIPO<br>GRAPHY</div>
+              <div style="width:30px;height:2px;background:#cc2200;margin:8px auto;"></div>
+              <div style="display:flex;gap:4px;justify-content:center;">
+                <div style="width:40px;height:52px;background:#0a0a0c;"></div>
+                <div style="width:32px;height:52px;background:#e8e5e0;border:1px solid #ccc;"></div>
+                <div style="width:40px;height:52px;background:#0a0a0c;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="project-card-title">Magazine Design</div>
+        <p class="project-card-desc">
+          Editorial magazine layout for a typography-focused publication.
+          High-contrast black, white, and red palette with bold display type,
+          grid-breaking layouts, and vintage printing aesthetic.
+        </p>
+        <div style="display:flex;gap:8px;flex-wrap:wrap;">
+          <span class="tag tag-blue">Editorial</span>
+          <span class="tag">Typography</span>
+          <span class="tag">Print Design</span>
+        </div>
+        <div class="project-card-footer">
+          <span class="project-card-year">2025</span>
+          <div class="project-card-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /projects-grid -->
+  </div><!-- /container -->
+
+  <footer style="margin-top:120px;">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: VENTURES
+═══════════════════════════════════════════════════════════ -->
+<div id="page-ventures" class="page">
+
+  <div class="container">
+    <div class="page-hero">
+      <div class="page-hero-inner">
+        <div class="page-title-wrap">
+          <div class="section-label">Business</div>
+          <h1 class="display-xl reveal">My<br>Ventures</h1>
+        </div>
+        <p class="page-hero-desc reveal reveal-delay-2">
+          Alongside design work, I build and operate marketing businesses —
+          applying systems thinking and automation to grow revenue for
+          contractors and small businesses.
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <div style="margin-top:80px;">
+    <div class="container">
+
+      <!-- OUTDONE MARKETING -->
+      <div style="margin-bottom:2px;background:var(--surface);border:1px solid var(--border);padding:72px 64px;position:relative;overflow:hidden;" class="reveal">
+        <div style="position:absolute;right:-60px;bottom:-60px;font-family:var(--font-display);font-size:200px;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.03);pointer-events:none;line-height:1;letter-spacing:0.02em;text-transform:uppercase;">OUTDONE</div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;position:relative;">
+          <div>
+            <div class="venture-type">Marketing Agency · Alberta Inc.</div>
+            <div style="margin-top:12px;margin-bottom:8px;">
+              <span style="font-family:var(--font-display);font-size:64px;letter-spacing:0.02em;text-transform:uppercase;color:var(--white);line-height:1;">OUTDONE</span>
+            </div>
+            <div style="font-family:var(--font-display);font-size:22px;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);margin-bottom:28px;">MARKETING</div>
+            <p style="font-style:italic;font-family:var(--font-serif);font-size:17px;color:var(--dim);margin-bottom:32px;line-height:1.5;">"Revenue systems for contractors who are tired of word-of-mouth."</p>
+            <p class="venture-body">
+              Outdone Marketing is an Alberta-incorporated agency specializing in database
+              reactivation (DBR) and outbound marketing for contractors and small businesses.
+              We build automated lead generation and reactivation systems using GoHighLevel,
+              n8n, and multi-channel outreach — helping roofers, exterior service companies,
+              and home service businesses convert dormant leads into booked jobs.
+            </p>
+            <p class="venture-body">
+              Current focus: cold outbound to Canadian roofing contractors using review-blast
+              offers as proof-of-concept, with a 14-day free trial funnel and SMS/cold email
+              sequences targeting Google Business Profile data.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px;">
+              <span class="tag tag-blue">Database Reactivation</span>
+              <span class="tag">Cold Email</span>
+              <span class="tag">SMS Marketing</span>
+              <span class="tag">GoHighLevel</span>
+              <span class="tag">n8n Automation</span>
+              <span class="tag">Lead Generation</span>
+            </div>
+            <a href="mailto:hello@outdonemarketing.com" class="btn btn-primary">
+              Get In Touch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+          </div>
+          <div>
+            <div class="venture-metrics">
+              <div class="metric-item">
+                <div class="metric-num">CA</div>
+                <div class="metric-label">Market Focus</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">DBR</div>
+                <div class="metric-label">Core Service</div>
+              </div>
+              <div class="metric-item">
+                <div class="metric-num">B2B</div>
+                <div class="metric-label">Client Type</div>
+              </div>
+            </div>
+            <div style="margin-top:32px;padding:32px;background:var(--surface2);border:1px solid var(--border);">
+              <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dimmer);margin-bottom:20px;">Core Services</div>
+              <div style="display:flex;flex-direction:column;gap:0;">
+                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
+                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
+                  <div style="font-size:13px;color:var(--white);">Database Reactivation Campaigns</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
+                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
+                  <div style="font-size:13px;color:var(--white);">Cold Outbound Systems</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
+                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
+                  <div style="font-size:13px;color:var(--white);">Google Business Profile Optimization</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
+                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
+                  <div style="font-size:13px;color:var(--white);">Review Generation &amp; Management</div>
+                </div>
+                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;">
+                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
+                  <div style="font-size:13px;color:var(--white);">CRM Setup &amp; Automation (GHL)</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- TRP MAINTENANCE -->
+      <div style="background:var(--surface);border:1px solid var(--border);border-top:none;padding:72px 64px;position:relative;overflow:hidden;" class="reveal reveal-delay-1">
+        <div style="position:absolute;right:-60px;bottom:-60px;font-family:var(--font-display);font-size:200px;color:transparent;-webkit-text-stroke:1px rgba(255,255,255,0.03);pointer-events:none;line-height:1;letter-spacing:0.02em;text-transform:uppercase;">TRP</div>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;position:relative;">
+          <div>
+            <div class="venture-type">Field Service Operations</div>
+            <div style="margin-top:12px;margin-bottom:8px;">
+              <span style="font-family:var(--font-display);font-size:64px;letter-spacing:0.02em;text-transform:uppercase;color:var(--white);line-height:1;">TRP</span>
+            </div>
+            <div style="font-family:var(--font-display);font-size:22px;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);margin-bottom:28px;">MAINTENANCE</div>
+            <p style="font-style:italic;font-family:var(--font-serif);font-size:17px;color:var(--dim);margin-bottom:32px;line-height:1.5;">"Where operational discipline meets field execution."</p>
+            <p class="venture-body">
+              TRP Maintenance (formerly TRP Build Co) was a residential maintenance and
+              field service operation built to establish systems for client acquisition,
+              quoting, scheduling, and delivery. Operating as the hands-on precursor to
+              Outdone Marketing, it provided the real-world feedback loop needed to build
+              effective outbound and reactivation systems.
+            </p>
+            <p class="venture-body">
+              The processes, scripts, and frameworks developed through TRP directly informed
+              Outdone's current service offerings — particularly around lead follow-up
+              sequences and contractor-specific sales language.
+            </p>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px;">
+              <span class="tag">Field Operations</span>
+              <span class="tag">Systems Building</span>
+              <span class="tag">Client Acquisition</span>
+              <span class="tag">Calgary, AB</span>
+            </div>
+          </div>
+          <div style="padding:40px;background:var(--surface2);border:1px solid var(--border);position:relative;overflow:hidden;">
+            <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dimmer);margin-bottom:24px;">Key Learnings</div>
+            <div style="display:flex;flex-direction:column;gap:20px;">
+              <div>
+                <div style="font-family:var(--font-display);font-size:20px;color:var(--white);margin-bottom:4px;">Client Reactivation</div>
+                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Dormant clients respond 3–5x better to personalized SMS than email — insight now core to DBR methodology at Outdone.</div>
+              </div>
+              <div style="width:100%;height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--font-display);font-size:20px;color:var(--white);margin-bottom:4px;">Outbound Scripts</div>
+                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Contractor-specific language and objection handling built from real sales calls — no fluff, just booked jobs.</div>
+              </div>
+              <div style="width:100%;height:1px;background:var(--border);"></div>
+              <div>
+                <div style="font-family:var(--font-display);font-size:20px;color:var(--white);margin-bottom:4px;">Systems Over Services</div>
+                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Pivoting from delivery to building the system that delivers — the foundational philosophy behind Outdone.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer style="margin-top:120px;">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: ABOUT
+═══════════════════════════════════════════════════════════ -->
+<div id="page-about" class="page">
+  <div class="container">
+    <div class="page-hero">
+      <div class="section-label reveal">About</div>
+      <h1 class="display-xl reveal reveal-delay-1">The<br>Person<br>Behind It</h1>
+    </div>
+
+    <section style="padding:80px 0 120px;">
+      <div class="about-grid reveal">
+        <!-- SIDEBAR -->
+        <div>
+          <div class="about-photo-frame">
+            <div class="about-photo-placeholder">L</div>
+          </div>
+          <div class="about-sidebar-name">
+            Leo<span>Olier</span>
+          </div>
+          <ul class="about-contact-list">
+            <li>GBDA · University of Waterloo</li>
+            <li>3rd Year · Co-op Fall 2026</li>
+            <li>Calgary, AB / Waterloo, ON</li>
+            <li>Founder, Outdone Marketing</li>
+            <li>Available for freelance</li>
+          </ul>
+          <div style="margin-top:32px;display:flex;flex-direction:column;gap:12px;">
+            <a href="#contact" data-page-link="contact" class="btn btn-primary" style="justify-content:center;">
+              Get in Touch
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </a>
+            <a href="#" class="btn btn-outline" style="justify-content:center;">
+              Download Resume
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.879a2 2 0 001.939-1.515L22 17"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- MAIN CONTENT -->
+        <div class="about-content">
+          <h2>
+            Designing at the intersection of <em>business</em> and <em>craft</em>
+          </h2>
+          <div class="divider-blue"></div>
+          <p>
+            I'm a third-year Global Business and Digital Arts student at the University
+            of Waterloo — a program that blends UX design, business strategy, and
+            digital media. My work lives at the intersection of how things look and
+            how things work.
+          </p>
+          <p>
+            Outside of school, I run Outdone Marketing — an Alberta-incorporated agency
+            building automated outbound and reactivation systems for contractors across
+            Canada. I'm hands-on with GoHighLevel, n8n, Supabase, and cold outreach
+            infrastructure, which gives my design work an unusually operational edge.
+          </p>
+          <p>
+            I'm drawn to projects with real stakes: brand redesigns that need to move
+            product, apps that need to retain users, and systems that need to scale
+            without breaking. I care about the outcome, not just the output.
+          </p>
+          <p>
+            When I'm not designing or building systems, I'm cooking with ancestral
+            nutrition principles, running a homelab media server, or trying to improve
+            my chess game from the beginner ranks.
+          </p>
+
+          <!-- SKILLS -->
+          <div class="skills-matrix" style="margin-top:56px;">
+            <div class="section-label" style="margin-bottom:32px;">Skills &amp; Tools</div>
+
+            <div class="skill-row">
+              <span class="skill-name">UX Design</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:90%;"></div></div>
+              <span class="skill-level">90%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Brand Identity</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%;"></div></div>
+              <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Web Design</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%;"></div></div>
+              <span class="skill-level">88%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Figma</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:92%;"></div></div>
+              <span class="skill-level">92%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">HTML / CSS / JS</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%;"></div></div>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Marketing Systems</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%;"></div></div>
+              <span class="skill-level">88%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Automation (n8n)</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%;"></div></div>
+              <span class="skill-level">75%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">AI Tools</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%;"></div></div>
+              <span class="skill-level">85%</span>
+            </div>
+          </div>
+
+          <!-- EDUCATION + EXPERIENCE -->
+          <div style="margin-top:72px;">
+            <div class="section-label" style="margin-bottom:32px;">Experience</div>
+            <div style="display:flex;flex-direction:column;gap:0;">
+              <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2024 — Present</div>
+                <div>
+                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">OUTDONE MARKETING</div>
+                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Founder</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">DBR and outbound marketing agency. Built from scratch — services, systems, client acquisition, delivery.</div>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2023 — 2024</div>
+                <div>
+                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">TRP MAINTENANCE</div>
+                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Founder &amp; Operator</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">Field service operation. Built client acquisition and delivery systems that informed Outdone's methodology.</div>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2022 — Present</div>
+                <div>
+                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">UNIVERSITY OF WATERLOO</div>
+                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Global Business &amp; Digital Arts — GBDA</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">3rd year. Focus on UX design, digital media, business strategy, and project management.</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="mailto:hello@example.com">Email</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: CONTACT
+═══════════════════════════════════════════════════════════ -->
+<div id="page-contact" class="page">
+  <div class="container">
+    <div class="contact-layout">
+
+      <!-- LEFT -->
+      <div>
+        <div class="section-label reveal">Contact</div>
+        <h1 class="contact-headline reveal reveal-delay-1">
+          Let's<br>Talk<br><span>.</span>
+        </h1>
+        <p style="font-size:14px;line-height:1.85;color:var(--dim);max-width:400px;" class="reveal reveal-delay-2">
+          Whether you're looking for a co-op student for Fall 2026, a freelance
+          designer for your next project, or marketing help for your contracting
+          business — I'd love to hear from you.
+        </p>
+
+        <div class="contact-info reveal reveal-delay-3">
+          <div class="contact-info-item">
+            <span class="contact-info-label">Email</span>
+            <span class="contact-info-value">hello@example.com</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Location</span>
+            <span class="contact-info-value">Calgary, AB / Waterloo, ON</span>
+          </div>
+          <div class="contact-info-item">
+            <span class="contact-info-label">Availability</span>
+            <span class="contact-info-value">Co-op Ready — Fall 2026</span>
+          </div>
+          <div class="contact-info-item" style="border-bottom:1px solid var(--border);padding-bottom:20px;">
+            <span class="contact-info-label">Preferred Contact</span>
+            <span class="contact-info-value">Written / Async</span>
+          </div>
+        </div>
+
+        <div style="display:flex;gap:16px;margin-top:40px;" class="reveal reveal-delay-4">
+          <a href="https://linkedin.com" target="_blank" class="btn btn-outline" style="gap:8px;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
+          </a>
+          <a href="https://github.com" target="_blank" class="btn btn-outline" style="gap:8px;">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
+            GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- RIGHT: FORM -->
+      <div class="contact-form reveal reveal-delay-2">
+        <div style="font-family:var(--font-display);font-size:20px;letter-spacing:0.06em;color:var(--white);margin-bottom:32px;text-transform:uppercase;">Send a Message</div>
+
+        <div class="form-row">
+          <label class="form-label">Your Name</label>
+          <input type="text" class="form-input" placeholder="Jane Smith" />
+        </div>
+        <div class="form-row">
+          <label class="form-label">Email</label>
+          <input type="email" class="form-input" placeholder="jane@company.com" />
+        </div>
+        <div class="form-row">
+          <label class="form-label">Reason for Reaching Out</label>
+          <select class="form-select">
+            <option value="" disabled selected>Select one…</option>
+            <option>Co-op / Internship Opportunity</option>
+            <option>Freelance Design Project</option>
+            <option>Marketing Services (Outdone)</option>
+            <option>Collaboration / Other</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label class="form-label">Message</label>
+          <textarea class="form-textarea" placeholder="Tell me a bit about what you have in mind…"></textarea>
+        </div>
+
+        <button class="btn btn-primary" style="width:100%;justify-content:center;padding:15px 28px;font-size:12px;" onclick="handleFormSubmit(this)">
+          Send Message
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg>
+        </button>
+
+        <div id="form-success" style="display:none;margin-top:20px;padding:16px;background:rgba(46,107,255,0.1);border:1px solid rgba(46,107,255,0.3);border-radius:3px;font-size:12px;color:var(--blue-light);text-align:center;letter-spacing:0.06em;">
+          Message sent — I'll be in touch soon!
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <footer style="margin-top:0;">
+    <div class="container">
+      <div class="footer-inner">
+        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <div class="footer-links">
+          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
+          <a href="https://github.com" target="_blank">GitHub</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<script>
+function handleFormSubmit(btn) {
+  btn.style.opacity = '0.5';
+  btn.style.pointerEvents = 'none';
+  setTimeout(() => {
+    btn.style.display = 'none';
+    document.getElementById('form-success').style.display = 'block';
+  }, 800);
+}
+</script>
+<script src="js/main.js"></script>
+</body>
+</html>
