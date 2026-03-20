@@ -38,7 +38,7 @@ document.addEventListener('mousemove', e => {
   requestAnimationFrame(animRing);
 })();
 
-document.querySelectorAll('a, button, .project-row, .project-card, .venture-cell').forEach(el => {
+document.querySelectorAll('a, button, .project-row, .wk-feat, .wk-card, .venture-cell').forEach(el => {
   el.addEventListener('mouseenter', () => document.body.classList.add('cursor-hover'));
   el.addEventListener('mouseleave', () => document.body.classList.remove('cursor-hover'));
 });
@@ -53,6 +53,8 @@ window.addEventListener('scroll', () => {
 const pages = document.querySelectorAll('.page');
 const navLinks = document.querySelectorAll('.nav-links a[data-page]');
 const transition = document.getElementById('page-transition');
+
+const caseStudyPages = new Set(['homescapes', 'vinnies']);
 
 function showPage(id, pushState = true) {
   transition.classList.add('active');
@@ -69,6 +71,9 @@ function showPage(id, pushState = true) {
       l.classList.toggle('active', l.dataset.page === id);
     });
 
+    // Show/hide floating close button on case study pages
+    document.body.classList.toggle('has-case-study', caseStudyPages.has(id));
+
     if (pushState) {
       history.pushState({ page: id }, '', '#' + id);
     }
@@ -77,6 +82,7 @@ function showPage(id, pushState = true) {
     setTimeout(() => {
       initReveals();
       initSkillBars();
+      initCounters();
       transition.classList.remove('active');
     }, 50);
   }, 280);
@@ -114,6 +120,14 @@ showPage(initHash, false);
 
 /* ── REVEAL ON SCROLL ────────────────────────────────────── */
 function initReveals() {
+  // Mark anything already in view (above fold) as visible immediately
+  const all = document.querySelectorAll('.page.active .reveal:not(.visible)');
+  all.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < window.innerHeight) el.classList.add('visible');
+  });
+
+  // For the rest, trigger well before they hit the fold
   const els = document.querySelectorAll('.page.active .reveal:not(.visible)');
   const obs = new IntersectionObserver((entries) => {
     entries.forEach(e => {
@@ -122,7 +136,7 @@ function initReveals() {
         obs.unobserve(e.target);
       }
     });
-  }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+  }, { threshold: 0.05, rootMargin: '0px 0px 120px 0px' });
 
   els.forEach(el => obs.observe(el));
 }
@@ -159,7 +173,7 @@ document.querySelectorAll('.filter-btn').forEach(btn => {
     btn.classList.add('active');
 
     const filter = btn.dataset.filter;
-    document.querySelectorAll('.project-card').forEach(card => {
+    document.querySelectorAll('[data-category]').forEach(card => {
       if (filter === 'all' || card.dataset.category === filter) {
         card.style.display = '';
       } else {
@@ -250,3 +264,27 @@ setTimeout(() => {
     setTimeout(() => el.classList.add('visible'), i * 120);
   });
 }, 100);
+
+/* ── STAT COUNTER ANIMATION ──────────────────────────────── */
+function initCounters() {
+  document.querySelectorAll('.page.active .stat-num:not(.counted)').forEach(el => {
+    el.classList.add('counted');
+    const raw = el.textContent.trim();
+    const num = parseFloat(raw);
+    if (isNaN(num)) return;
+    const suffix = raw.replace(/[\d.]/g, '');
+    const decimals = raw.includes('.') ? raw.split('.')[1].length : 0;
+    const duration = 900;
+    const start = performance.now();
+    function tick(now) {
+      const p = Math.min((now - start) / duration, 1);
+      const ease = 1 - Math.pow(1 - p, 3);
+      el.textContent = (num * ease).toFixed(decimals) + suffix;
+      if (p < 1) requestAnimationFrame(tick);
+    }
+    requestAnimationFrame(tick);
+  });
+}
+
+// Run counters on initial load
+setTimeout(initCounters, 300);

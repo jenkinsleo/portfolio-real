@@ -1,0 +1,63 @@
+## Design Context
+
+### Users
+**Primary:** Co-op/internship recruiters (Fall 2026), freelance design clients, potential marketing services prospects for Outdone Marketing.
+
+**Context:** They're evaluating quickly — often scanning multiple portfolios. They need to feel pulled in within seconds, not reassured. This is someone who builds things and runs businesses, not just a designer for hire.
+
+**Job to be done:** Validate that Leo has the taste, capability, and ambition to be worth reaching out to. The portfolio must do two things at once: prove craft through its own execution, and communicate entrepreneurial seriousness beyond the work itself.
+
+### Brand Personality
+**Three words:** Bold, Ambitious, Entrepreneurial
+
+**Voice:** Confident without being loud. Direct. Doesn't over-explain. Shows rather than tells.
+
+**Emotional goal for visitors:** *Intrigued — I want to know more.* The portfolio should withhold just enough to make people lean in and explore. Not everything revealed at once. Create pull, not push.
+
+**Tone:** No corporate polish. No student humility. Peer-to-peer confidence — the tone of someone who has already shipped real work and built real businesses.
+
+### Aesthetic Direction
+**Visual tone:** Dark mode only. Near-black (#0a0a0c) backgrounds with warm white text (#f0ede8) and a single vibrant blue accent (#2e6bff). Minimal ornamentation. Typography-driven. Grid precision.
+
+**Theme:** The design is the portfolio — every spacing decision, typographic choice, and interaction is itself proof of skill. Zero tolerance for generic or template-looking elements.
+
+**What to avoid:**
+- Bright/light-mode softness that reads as "student portfolio"
+- Over-decorated or maximalist layouts
+- Safe, predictable component patterns (e.g. standard card grids with drop shadows)
+- Anything that reads as a theme or template
+- Excessive animation that distracts from content
+
+**Typography system in use:**
+- `Bebas Neue` — Display headlines, uppercase, tight tracking
+- `DM Serif Display` — Elegant serif accents, often italicized
+- `DM Mono` — Body text, labels, UI chrome (weight 300)
+
+**Existing color tokens:**
+```
+--bg:         #0a0a0c
+--surface:    #111114
+--surface2:   #18181d
+--white:      #f0ede8
+--dim:        rgba(240,237,232,0.45)
+--blue:       #2e6bff
+--blue-light: #5b8fff
+--radius:     3px
+```
+
+### Design Principles
+
+1. **Create intrigue through restraint.**
+   Show less than you have. Make visitors earn discovery by exploring. Hierarchy should reward attention — surface the headline, bury the depth. Never explain what the work can demonstrate visually.
+
+2. **The portfolio is itself the proof of craft.**
+   Spacing, type scale, interaction quality, and visual rhythm ARE the work samples. Every pixel communicates taste. No element should feel accidental or unconsidered.
+
+3. **Boldness through contrast, not clutter.**
+   Impact comes from what's removed. Deep darks, large type, a single accent color used sparingly. When everything is a statement, nothing is. Reserve the blue for moments that deserve attention.
+
+4. **Communicate execution, not just aesthetics.**
+   This is a designer-builder-entrepreneur. Design decisions should signal someone who ships, not just someone who designs. Metrics, outcomes, and operational thinking are as important as visual beauty.
+
+5. **Motion reveals hierarchy, never decorates.**
+   Every animation should teach the user something — what's important, what responds, what is alive. Stagger reveals to build narrative. Micro-interactions should feel considered, not borrowed from a library.

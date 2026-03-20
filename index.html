@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Leo — Designer & Builder</title>
-  <meta name="description" content="Portfolio of Leo — GBDA student, UX designer, agency founder. Based in Calgary, AB." />
+  <title>Leo Jenkins — Designer & Builder</title>
+  <meta name="description" content="Portfolio of Leo Jenkins — GBDA student at UWaterloo, UX designer, available for Fall 2026 co-op. Based in Calgary, AB / Waterloo, ON." />
   <link rel="stylesheet" href="style.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,6 +17,11 @@
 
 <!-- PAGE TRANSITION -->
 <div id="page-transition"></div>
+
+<!-- FLOATING CASE STUDY CLOSE BUTTON -->
+<div class="cs-close-btn" data-page-link="work" title="Back to Work">
+  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M18 6L6 18M6 6l12 12"/></svg>
+</div>
 
 <!-- ══════════════════════════════════════════════════════════
      NAVIGATION
@@ -48,7 +53,7 @@
 
         <div class="hero-eyebrow hero-stagger reveal">
           <div class="hero-eyebrow-line"></div>
-          <span class="hero-eyebrow-text">Designer &amp; Builder — Calgary, AB</span>
+          <span class="hero-eyebrow-text">Leo Jenkins — Designer &amp; Builder</span>
         </div>
 
         <div class="hero-headline hero-stagger reveal reveal-delay-1">
@@ -65,21 +70,21 @@
 
         <div class="hero-meta hero-stagger reveal reveal-delay-2">
           <p class="hero-desc">
-            GBDA at Waterloo. Designing experiences, building brands,
-            running two ventures — all before I graduate.
+            GBDA at Waterloo. Combining design craft with business
+            thinking — available for Fall 2026 co-op.
           </p>
           <div class="hero-stats">
             <div class="stat-item">
-              <div class="stat-num">4</div>
+              <div class="stat-num">5</div>
               <div class="stat-label">Case Studies</div>
             </div>
             <div class="stat-item">
-              <div class="stat-num">2</div>
-              <div class="stat-label">Ventures</div>
+              <div class="stat-num">2Y</div>
+              <div class="stat-label">At Waterloo</div>
             </div>
             <div class="stat-item">
-              <div class="stat-num">3Y</div>
-              <div class="stat-label">Experience</div>
+              <div class="stat-num">4.0</div>
+              <div class="stat-label">GPA</div>
             </div>
           </div>
         </div>
@@ -92,13 +97,55 @@
   <div class="ticker-wrap">
     <div class="ticker-track">
       <div class="ticker-item"><span class="ticker-text">UX DESIGN</span><span class="ticker-dot"></span></div>
-      <div class="ticker-item"><span class="ticker-text">BRAND STRATEGY</span><span class="ticker-dot"></span></div>
-      <div class="ticker-item"><span class="ticker-text">DIGITAL MARKETING</span><span class="ticker-dot"></span></div>
-      <div class="ticker-item"><span class="ticker-text">OUTBOUND SYSTEMS</span><span class="ticker-dot"></span></div>
-      <div class="ticker-item"><span class="ticker-text">AI-POWERED CONTENT</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">BRAND IDENTITY</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">META ADS</span><span class="ticker-dot"></span></div>
       <div class="ticker-item"><span class="ticker-text">WEB DESIGN</span><span class="ticker-dot"></span></div>
-      <div class="ticker-item"><span class="ticker-text">AUTOMATION</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">FIGMA</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">DIGITAL MARKETING</span><span class="ticker-dot"></span></div>
+      <div class="ticker-item"><span class="ticker-text">TYPOGRAPHY</span><span class="ticker-dot"></span></div>
       <div class="ticker-item"><span class="ticker-text">GBDA — WATERLOO</span><span class="ticker-dot"></span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT STRIP -->
+  <div class="home-about">
+    <div class="container">
+      <div class="home-about-card">
+        <div class="home-about-photo">
+          <div class="home-about-photo-inner">
+            <img src="https://cdn.leojenkins.ca/portfolio/leo.jpeg" alt="Leo Jenkins" />
+          </div>
+        </div>
+        <div class="home-about-body">
+          <div class="home-about-name">Leo<br><span>Jenkins</span></div>
+          <p class="home-about-bio">
+            2nd year GBDA at Waterloo. I've been building things since before
+            I had the words for it — websites, brands, businesses. Design is
+            how I think. Shipping is how I learn.
+          </p>
+          <a href="#about" data-page-link="about" class="venture-link">
+            More About Me →
+          </a>
+        </div>
+        <div class="home-about-meta">
+          <div class="home-about-stat">
+            <span class="home-about-stat-val">GBDA</span>
+            <span class="home-about-stat-label">UWaterloo</span>
+          </div>
+          <div class="home-about-stat">
+            <span class="home-about-stat-val">Fall '26</span>
+            <span class="home-about-stat-label">Co-op Available</span>
+          </div>
+          <div class="home-about-stat">
+            <span class="home-about-stat-val">4.0</span>
+            <span class="home-about-stat-label">GPA</span>
+          </div>
+          <div class="home-about-stat">
+            <span class="home-about-stat-val">YYC</span>
+            <span class="home-about-stat-label">Calgary, AB</span>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 
@@ -110,7 +157,7 @@
           <div class="section-label">Selected Work</div>
           <h2 class="display-lg">Featured<br>Projects</h2>
         </div>
-        <div class="work-count">04</div>
+        <div class="work-count">05</div>
       </div>
 
       <div class="project-list">
@@ -158,6 +205,17 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
           </div>
         </div>
+        <div class="project-row reveal reveal-delay-5" data-project="trp-landing">
+          <span class="project-num">05</span>
+          <span class="project-name">TRP Build Co. — Landing Pages &amp; Ads</span>
+          <div class="project-tags">
+            <span class="tag">Web Design</span>
+            <span class="tag">Digital Marketing</span>
+          </div>
+          <div class="project-arrow">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+          </div>
+        </div>
       </div>
 
       <div style="display:flex;justify-content:center;margin-top:56px;" class="reveal">
@@ -178,21 +236,23 @@
           <div class="venture-type">Marketing Agency · Alberta Inc.</div>
           <div class="venture-name">Outdone<br>Marketing</div>
           <p class="venture-desc">
-            Database reactivation and outbound marketing for contractors and
-            small businesses. Cold email, SMS, and automated lead systems
-            targeting roofing and exterior home services across Canada.
+            Built a B2B marketing agency from scratch. Running Meta ad
+            campaigns, building client websites, setting up GoHighLevel
+            automations, and doing the outbound personally — cold calls,
+            cold SMS, and cold email to acquire clients and close them.
           </p>
           <a href="#ventures" data-page-link="ventures" class="venture-link">
             Learn More →
           </a>
         </div>
         <div class="venture-cell">
-          <div class="venture-type">Field Service Operations</div>
+          <div class="venture-type">Service Business · Calgary, AB</div>
           <div class="venture-name">TRP<br>Maintenance</div>
           <p class="venture-desc">
-            Operational venture focused on residential maintenance and build
-            services. Foundation for developing client acquisition systems
-            and service delivery frameworks later applied at Outdone.
+            Built and ran a residential exterior cleaning company solo —
+            door-to-door sales, quoting, scheduling, and on-site delivery.
+            Cold-acquired every customer. Taught sales, operations, and
+            what it actually takes to run something by yourself.
           </p>
           <a href="#ventures" data-page-link="ventures" class="venture-link">
             Learn More →
@@ -222,12 +282,15 @@
 
   <footer>
     <div class="container">
-      <div class="footer-inner">
-        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+      <div style="text-align:center;padding:12px 0 0;border-top:1px solid var(--border);">
+        <span style="font-size:10px;color:var(--dimmer);letter-spacing:0.12em;">wyd scrolling down here?</span>
+      </div>
+      <div class="footer-inner" style="margin-top:16px;">
+        <span class="footer-copy">© 2026 Leo Jenkins + Outdone Marketing Ltd. All rights reserved.</span>
         <div class="footer-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://www.instagram.com/leojenkins_/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/leojenkins05/" target="_blank">LinkedIn</a>
+          <a href="mailto:leo@leojenkins.ca">Email</a>
         </div>
       </div>
     </div>
@@ -247,9 +310,8 @@
           <h1 class="display-xl reveal">Selected<br>Work</h1>
         </div>
         <p class="page-hero-desc reveal reveal-delay-2">
-          A collection of design, branding, and UX projects — ranging from
-          website redesigns and mobile apps to brand identities and editorial
-          layouts.
+          Design, branding, and UX projects — each one built around a real
+          problem, a real client, or a real deadline.
         </p>
       </div>
     </div>
@@ -262,170 +324,533 @@
       <button class="filter-btn" data-filter="editorial">Editorial</button>
     </div>
 
-    <div class="projects-grid" style="margin-top:0;border-top:none;">
+    <!-- FEATURED: full-width stacked -->
+    <div class="wk-featured">
 
-      <!-- PROJECT 1: HOMESCAPES -->
-      <div class="project-card featured reveal" data-category="web">
-        <div style="display:flex;flex-direction:column;justify-content:space-between;height:100%;">
-          <div>
-            <div class="project-card-num">01 — Web Design</div>
-            <div style="height:16px;"></div>
-            <div class="project-card-title" style="font-size:40px;margin-bottom:16px;">Homescapes<br>Website Redesign</div>
-            <p class="project-card-desc">
-              A full redesign of a real estate discovery platform — improving
-              property search UX, streamlining the booking flow, and building
-              a design system from scratch. Focus on conversion and clarity.
-            </p>
-            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:16px;">
-              <span class="tag tag-blue">Web Design</span>
-              <span class="tag">UX</span>
-              <span class="tag">Design System</span>
-              <span class="tag">Figma</span>
-            </div>
+      <!-- 01 HOMESCAPES -->
+      <div class="wk-feat reveal" data-category="web" data-page-link="homescapes">
+        <div class="wk-visual">
+          <div class="wk-visual-inner">
+            <img src="https://cdn.leojenkins.ca/portfolio/projects/homescapes/hero.jpeg" alt="Homescapes website redesign" loading="lazy" />
           </div>
-          <div class="project-card-footer">
-            <span class="project-card-year">2024</span>
-            <a href="#" class="btn btn-primary" style="padding:10px 20px;">
-              View Case Study
+        </div>
+        <div class="wk-feat-info">
+          <div class="wk-feat-left">
+            <span class="wk-n">01</span>
+            <div class="wk-title">Homescapes Website Redesign</div>
+            <p class="wk-desc">Full redesign for a Calgary landscape contractor — rebuilt for trust and conversion on $80K+ projects. Sitemap, Figma mockup, and video critique pitch delivered.</p>
+          </div>
+          <div class="wk-feat-right">
+            <div class="wk-arrow">
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
+            </div>
+          </div>
+          <span class="wk-feat-label">Web Design · Client Work · 2025</span>
+        </div>
+      </div>
+
+      <!-- 02 VINNIES -->
+      <div class="wk-feat reveal reveal-delay-1" data-category="branding" data-page-link="vinnies">
+        <div class="wk-visual">
+          <div class="wk-visual-inner">
+            <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/hero.avif" alt="Vinnie's store rebrand" loading="lazy" />
           </div>
         </div>
-        <div class="project-card-img" style="height:100%;min-height:320px;">
-          <div class="project-card-img-inner" style="background: linear-gradient(135deg, #0e1428 0%, #1a2540 50%, #0a0f1e 100%);">
-            <div style="text-align:center;">
-              <div style="font-family:var(--font-display);font-size:28px;letter-spacing:0.06em;color:rgba(255,255,255,0.15);margin-bottom:8px;">HOMESCAPES</div>
-              <div style="width:80px;height:2px;background:var(--blue);margin:0 auto 16px;"></div>
-              <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;padding:0 24px;">
-                <div style="height:48px;background:rgba(255,255,255,0.05);border-radius:3px;border:1px solid rgba(255,255,255,0.08);"></div>
-                <div style="height:48px;background:rgba(46,107,255,0.2);border-radius:3px;border:1px solid rgba(46,107,255,0.3);"></div>
-                <div style="height:32px;background:rgba(255,255,255,0.04);border-radius:3px;"></div>
-                <div style="height:32px;background:rgba(255,255,255,0.04);border-radius:3px;"></div>
+        <div class="wk-feat-info">
+          <div class="wk-feat-left">
+            <span class="wk-n">02</span>
+            <div class="wk-title">Vinnie's Store Rebrand</div>
+            <p class="wk-desc">Rebranded Vincenzo's Italian grocery to "Vinnie's" — new name, visual identity, tone of voice, and AI social video strategy targeting Gen Z without losing the store's roots.</p>
+          </div>
+          <div class="wk-feat-right">
+            <div class="wk-arrow">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+            </div>
+          </div>
+          <span class="wk-feat-label">Brand Identity · GBDA · 2025</span>
+        </div>
+      </div>
+
+
+      <!-- 03 RENTIFY -->
+      <div class="wk-feat wk-feat-static reveal reveal-delay-2" data-category="app">
+        <div class="wk-visual">
+          <div class="wk-visual-inner">
+            <img src="https://cdn.leojenkins.ca/portfolio/design-7.png" alt="Rentify app mockup" loading="lazy" />
+          </div>
+        </div>
+        <div class="wk-feat-info wk-feat-info-lg">
+          <div class="wk-feat-lg-head">
+            <div class="wk-feat-left">
+              <span class="wk-n">03</span>
+              <div class="wk-title">Rentify</div>
+              <p class="wk-desc">Student rental app — from user research to high-fidelity prototype. Tackled the friction of finding off-campus housing in a market that consistently disadvantages students.</p>
+            </div>
+            <span class="wk-feat-lg-label">App Design · UX · GBDA 210 · 2024</span>
+          </div>
+          <div class="wk-feat-details">
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Role</div>
+              <div class="wk-detail-val">UX Designer — 2nd lead designer on a 2-person design team.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Requirements</div>
+              <div class="wk-detail-val">Map student housing pain points through case studies, user interviews, and journey diagrams. Produce a complete app prototype from research to hi-fi screens.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Contribution</div>
+              <div class="wk-detail-val">Conducted 1 user interview. Designed all low-fidelity wireframes. Owned the full high-fidelity Figma prototype from wireframes to pixel-complete screens.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Outcome</div>
+              <div class="wk-detail-val">Interactive prototype covering rental discovery, filtering, listing views, and application flows — demonstrating end-to-end UX thinking.</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 04 MAGAZINE -->
+      <div class="wk-feat wk-feat-static reveal reveal-delay-3" data-category="editorial">
+        <div class="wk-visual">
+          <div class="wk-visual-inner wk-visual-split">
+            <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/magazine-1.png" alt="Magazine spread" loading="lazy" />
+            <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/magazine-2.png" alt="Magazine spread" loading="lazy" />
+          </div>
+        </div>
+        <div class="wk-feat-info wk-feat-info-lg">
+          <div class="wk-feat-lg-head">
+            <div class="wk-feat-left">
+              <span class="wk-n">04</span>
+              <div class="wk-title">Magazine Design</div>
+              <p class="wk-desc">A print magazine designed solo — editorial grids, typographic hierarchy, and cover design from concept to print-ready A4 file. First full print production workflow.</p>
+            </div>
+            <span class="wk-feat-lg-label">Editorial · Print · GBDA 101 · 2025</span>
+          </div>
+          <div class="wk-feat-details">
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Role</div>
+              <div class="wk-detail-val">Art Director &amp; Designer — solo project with no outside input on layout or type decisions.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Requirements</div>
+              <div class="wk-detail-val">Design a complete print publication demonstrating mastery of editorial layout, grid systems, and typographic composition in Adobe InDesign.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Contribution</div>
+              <div class="wk-detail-val">Everything — concept, grid system, type hierarchy, cover design, all spreads. Developed skills in InDesign, print production, and editorial design fundamentals.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Outcome</div>
+              <div class="wk-detail-val">Print-ready A4 magazine delivered.
+                <a href="https://images.outdone.ca/Jenkins_Leo_A4-print-file.pdf" target="_blank" class="wk-pdf-link">
+                  <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+                  View PDF
+                </a>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      <!-- PROJECT 2: VINNIES -->
-      <div class="project-card reveal reveal-delay-1" data-category="branding">
-        <div class="project-card-num">02 — Branding</div>
-        <div class="project-card-img">
-          <div class="project-card-img-inner" style="background:linear-gradient(150deg,#1a0a08 0%,#2d1008 50%,#0a0a0c 100%);">
-            <div style="text-align:center;">
-              <div style="font-family:var(--font-serif);font-style:italic;font-size:36px;color:rgba(255,255,255,0.18);">Vinnie's</div>
-              <div style="font-size:10px;letter-spacing:0.25em;text-transform:uppercase;color:rgba(255,100,50,0.4);margin-top:6px;">Italian Market</div>
-            </div>
+      <!-- 05 TRP BUILD CO -->
+      <div class="wk-feat wk-feat-static reveal reveal-delay-4" data-category="web">
+        <div class="wk-visual">
+          <div class="wk-visual-inner wk-visual-split">
+            <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/figma-ad-creatives.png" alt="TRP ad creatives in Figma" loading="lazy" />
+            <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/ads-manager.png" alt="TRP Facebook Ads Manager results" loading="lazy" />
           </div>
         </div>
-        <div class="project-card-title">Vinnie's Brand Redesign</div>
-        <p class="project-card-desc">
-          Full rebrand of Vincenzo's Italian grocery to "Vinnie's" — targeting Gen Z
-          with authentic, family-oriented visual identity. Included AI-generated
-          social video content strategy using Veo and Kling.
-        </p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span class="tag tag-blue">Branding</span>
-          <span class="tag">Identity</span>
-          <span class="tag">Social Strategy</span>
-        </div>
-        <div class="project-card-footer">
-          <span class="project-card-year">2025</span>
-          <div class="project-card-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        <div class="wk-feat-info wk-feat-info-lg">
+          <div class="wk-feat-lg-head">
+            <div class="wk-feat-left">
+              <span class="wk-n">05</span>
+              <div class="wk-title">TRP Build Co. Landing Pages</div>
+              <p class="wk-desc">Conversion-focused landing pages and Facebook ad creative for a Calgary outdoor construction company. Built solo, end-to-end, while employed as Sales &amp; Marketing.</p>
+            </div>
+            <span class="wk-feat-lg-label">Web · Performance Marketing · 2024–25</span>
+          </div>
+          <div class="wk-feat-details">
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Role</div>
+              <div class="wk-detail-val">Designer + Marketing — solo. Employed as Sales &amp; Marketing; owned the entire campaign from design to launch.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Requirements</div>
+              <div class="wk-detail-val">Generate qualified leads for $80K+ outdoor construction projects using paid Facebook ads and a dedicated landing page funnel.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Contribution</div>
+              <div class="wk-detail-val">Designed and built all landing pages. Created all Facebook ad creative. Managed targeting, budgets, and iteration entirely solo.</div>
+            </div>
+            <div class="wk-detail-item">
+              <div class="wk-detail-label">Outcome</div>
+              <div class="wk-detail-val">$1M+ revenue attributed to the campaign. 13× return on ad spend — achieved while employed part-time alongside studies.</div>
+            </div>
           </div>
         </div>
       </div>
 
-      <!-- PROJECT 3: RENTIFY -->
-      <div class="project-card reveal reveal-delay-2" data-category="app">
-        <div class="project-card-num">03 — App Design</div>
-        <div class="project-card-img">
-          <div class="project-card-img-inner" style="background:linear-gradient(135deg,#060c18 0%,#0d1a30 50%,#06090f 100%);">
-            <div style="display:flex;gap:6px;align-items:center;justify-content:center;">
-              <div style="width:60px;height:100px;background:rgba(255,255,255,0.05);border-radius:8px;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
-                <div style="width:40px;height:4px;background:rgba(46,107,255,0.5);border-radius:2px;"></div>
-              </div>
-              <div style="width:70px;height:120px;background:rgba(255,255,255,0.07);border-radius:8px;border:1px solid rgba(46,107,255,0.25);display:flex;flex-direction:column;gap:6px;padding:10px 8px;align-items:center;">
-                <div style="width:100%;height:4px;background:rgba(46,107,255,0.4);border-radius:2px;"></div>
-                <div style="width:80%;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;"></div>
-                <div style="width:90%;height:3px;background:rgba(255,255,255,0.1);border-radius:2px;"></div>
-              </div>
-              <div style="width:60px;height:100px;background:rgba(255,255,255,0.05);border-radius:8px;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;">
-                <div style="width:40px;height:4px;background:rgba(46,107,255,0.3);border-radius:2px;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-title">Rentify App Design</div>
-        <p class="project-card-desc">
-          End-to-end mobile app design for a rental property platform. Includes
-          UX research, user flows, wireframes, and hi-fi prototypes. Emphasizes
-          trust signals and streamlined tenant onboarding.
-        </p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span class="tag tag-blue">App Design</span>
-          <span class="tag">UX Research</span>
-          <span class="tag">Prototyping</span>
-        </div>
-        <div class="project-card-footer">
-          <span class="project-card-year">2024</span>
-          <div class="project-card-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-          </div>
-        </div>
-      </div>
-
-      <!-- PROJECT 4: MAGAZINE -->
-      <div class="project-card reveal reveal-delay-3" data-category="editorial">
-        <div class="project-card-num">04 — Editorial</div>
-        <div class="project-card-img">
-          <div class="project-card-img-inner" style="background:#f0ede8;">
-            <div style="text-align:center;padding:16px;">
-              <div style="font-family:'Bebas Neue',sans-serif;font-size:40px;color:#0a0a0c;letter-spacing:0.04em;line-height:0.9;">TIPO<br>GRAPHY</div>
-              <div style="width:30px;height:2px;background:#cc2200;margin:8px auto;"></div>
-              <div style="display:flex;gap:4px;justify-content:center;">
-                <div style="width:40px;height:52px;background:#0a0a0c;"></div>
-                <div style="width:32px;height:52px;background:#e8e5e0;border:1px solid #ccc;"></div>
-                <div style="width:40px;height:52px;background:#0a0a0c;"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="project-card-title">Magazine Design</div>
-        <p class="project-card-desc">
-          Editorial magazine layout for a typography-focused publication.
-          High-contrast black, white, and red palette with bold display type,
-          grid-breaking layouts, and vintage printing aesthetic.
-        </p>
-        <div style="display:flex;gap:8px;flex-wrap:wrap;">
-          <span class="tag tag-blue">Editorial</span>
-          <span class="tag">Typography</span>
-          <span class="tag">Print Design</span>
-        </div>
-        <div class="project-card-footer">
-          <span class="project-card-year">2025</span>
-          <div class="project-card-arrow">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-          </div>
-        </div>
-      </div>
-
-    </div><!-- /projects-grid -->
+    </div><!-- /wk-featured -->
   </div><!-- /container -->
 
   <footer style="margin-top:120px;">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <span class="footer-copy">© 2026 Leo Jenkins + Outdone Marketing Ltd. All rights reserved.</span>
         <div class="footer-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://www.instagram.com/leojenkins_/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/leojenkins05/" target="_blank">LinkedIn</a>
+          <a href="mailto:leo@leojenkins.ca">Email</a>
         </div>
       </div>
     </div>
   </footer>
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: CASE STUDY — HOMESCAPES
+═══════════════════════════════════════════════════════════ -->
+<div id="page-homescapes" class="page" data-type="casestudy">
+
+  <!-- BACK + TITLE -->
+  <div class="cs-header">
+    <div class="container">
+      <div class="cs-back" data-page-link="work">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M5 12l7 7M5 12l7-7"/></svg>
+        Work
+      </div>
+      <div class="cs-title-block reveal">
+        <div class="cs-eyebrow">01 · Web Design · Client Work · 2025</div>
+        <h1 class="cs-headline">Homescapes<br>Website Redesign</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="cs-hero-img reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/homescapes/hero.jpeg" alt="Homescapes redesigned homepage" loading="lazy" />
+  </div>
+
+  <!-- META BAR -->
+  <div class="cs-meta reveal">
+    <div class="container">
+      <div class="cs-meta-inner">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Client</span>
+          <span class="cs-meta-val">Homescapes Calgary LTD</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-val">Designer</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Year</span>
+          <span class="cs-meta-val">2025</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Course</span>
+          <span class="cs-meta-val">GBDA 228</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Deliverables</span>
+          <span class="cs-meta-val">Figma Prototype · Loom Critique · Sitemap</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <!-- PROBLEM + CONTRIBUTION -->
+    <div class="cs-two-col reveal">
+
+      <div class="cs-problem">
+        <div class="cs-section-label">The Problem</div>
+        <p class="cs-body">Calgary landscape contractor, strong offline reputation. Online: a cookie-cutter contractor template with no personality, no trust signals, and no clear service breakdown. For a business doing $80K+ projects, the site wasn't doing any selling.</p>
+        <div class="cs-issues">
+          <div class="cs-issue">Low trust — no reviews, no proof of quality</div>
+          <div class="cs-issue">Weak navigation + unclear services</div>
+          <div class="cs-issue">No calls to action where they mattered</div>
+          <div class="cs-issue">Layout felt dated and cramped</div>
+        </div>
+      </div>
+
+      <div class="cs-contribution">
+        <div class="cs-section-label">My Contribution</div>
+        <div class="cs-contrib-list">
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">01</span>
+            <span>Full site audit — identified four core UX failures</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">02</span>
+            <span>Delivered a Loom video critique of the original site</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">03</span>
+            <span>Rebuilt the information architecture + sitemap</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">04</span>
+            <span>Designed a complete hi-fi Figma prototype across all pages</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">05</span>
+            <span>Restructured for trust, conversion, and high-ticket clients</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- MOCKUP 1 -->
+    <div class="cs-img-full reveal">
+      <img src="https://cdn.leojenkins.ca/portfolio/projects/homescapes/white-mockup.webp" alt="Homescapes homepage mockup" loading="lazy" />
+    </div>
+
+    <!-- MOCKUP 2 + 3 -->
+    <div class="cs-img-two reveal">
+      <div class="cs-img-half">
+        <img src="https://cdn.leojenkins.ca/portfolio/projects/homescapes/featured-project-mockup.webp" alt="Homescapes project section" loading="lazy" />
+      </div>
+      <div class="cs-img-half">
+        <img src="https://cdn.leojenkins.ca/portfolio/projects/homescapes/contact-us-mockups.webp" alt="Homescapes contact page" loading="lazy" />
+      </div>
+    </div>
+
+    <!-- LINKS -->
+    <div class="cs-links reveal">
+      <a href="https://www.loom.com/share/be95cec704514bbfb05734915b5c1f61" target="_blank" class="cs-link cs-link-primary">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M8 5v14l11-7z"/></svg>
+        Watch Loom Critique
+      </a>
+      <a href="https://www.figma.com/design/7v63t7zXOvyIMoGxN5bHab/228-site-mockup?node-id=0-1" target="_blank" class="cs-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><rect x="3" y="3" width="18" height="18" rx="2"/><path d="M3 9h18M9 21V9"/></svg>
+        Figma Mockups
+      </a>
+      <a href="https://jenkinsleo.github.io/portfolio/project.html" target="_blank" class="cs-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        Full Case Study
+      </a>
+    </div>
+
+  </div><!-- /container -->
+
+</div>
+
+<!-- ══════════════════════════════════════════════════════════
+     PAGE: CASE STUDY — VINNIE'S
+═══════════════════════════════════════════════════════════ -->
+<div id="page-vinnies" class="page" data-type="casestudy">
+
+  <!-- BACK + TITLE -->
+  <div class="cs-header">
+    <div class="container">
+      <div class="cs-back" data-page-link="work">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M19 12H5M5 12l7 7M5 12l7-7"/></svg>
+        Work
+      </div>
+      <div class="cs-title-block reveal">
+        <div class="cs-eyebrow">02 · Brand Identity · GBDA 202 · 2025–26</div>
+        <h1 class="cs-headline">Vinnie's<br>Store Rebrand</h1>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGE -->
+  <div class="cs-hero-img reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/hero.avif" alt="Vinnie's rebrand hero" loading="lazy" />
+  </div>
+
+  <!-- META BAR -->
+  <div class="cs-meta reveal">
+    <div class="container">
+      <div class="cs-meta-inner">
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Client</span>
+          <span class="cs-meta-val">Vincenzo's, Waterloo ON</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Role</span>
+          <span class="cs-meta-val">Brand Designer</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Year</span>
+          <span class="cs-meta-val">2025–26</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Course</span>
+          <span class="cs-meta-val">GBDA 202</span>
+        </div>
+        <div class="cs-meta-div"></div>
+        <div class="cs-meta-item">
+          <span class="cs-meta-label">Deliverables</span>
+          <span class="cs-meta-val">Brand Identity · Packaging · Merch · Social Strategy · 3 AI Videos</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- BRIEF + CONTRIBUTION -->
+  <div class="container">
+    <div class="cs-two-col reveal">
+
+      <div class="cs-problem">
+        <div class="cs-section-label">The Brief</div>
+        <p class="cs-body">Vincenzo's is a nearly 60-year-old Italian grocery in Waterloo — founded by a first-generation immigrant, still run by family. Incredibly loyal customer base. But the customers who built the store are aging, and the brand wasn't pulling anyone new in.</p>
+        <div class="cs-issues">
+          <div class="cs-issue">Existing brand felt intimidating to first-timers</div>
+          <div class="cs-issue">No strategy to engage younger audiences</div>
+          <div class="cs-issue">Strong in-store experience — invisible online</div>
+          <div class="cs-issue">Goal: modernize without losing 60 years of trust</div>
+        </div>
+      </div>
+
+      <div class="cs-contribution">
+        <div class="cs-section-label">My Contribution</div>
+        <div class="cs-contrib-list">
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">01</span>
+            <span>Brand audit — identified what works and what's broken</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">02</span>
+            <span>Developed "Nonna's Table" as the central brand concept</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">03</span>
+            <span>New name (Vinnie's), logo redesign + full logo rationale with hand-drawn process work</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">04</span>
+            <span>Complete visual identity — colours, typography, tone of voice</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">05</span>
+            <span>Packaging, merch, storefront, and gift card mockups</span>
+          </div>
+          <div class="cs-contrib-item">
+            <span class="cs-contrib-n">06</span>
+            <span>3 AI-generated social media videos with content strategy</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div><!-- /container -->
+
+  <!-- CONCEPT SLIDES — FULL BLEED -->
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/feeling-of-nonnas-table.png" alt="The feeling of Nonna's table" loading="lazy" />
+  </div>
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/nonnas-table.png" alt="Nonna's table — the big idea" loading="lazy" />
+  </div>
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/third-place.png" alt="A third place" loading="lazy" />
+  </div>
+
+  <!-- STOREFRONT — FULL BLEED -->
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/storefront-mockup.webp" alt="Vinnie's storefront mockup" loading="lazy" />
+  </div>
+
+  <!-- LOGO RATIONALE -->
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/logo-before-after.png" alt="Logo before and after" loading="lazy" />
+  </div>
+
+  <div class="container">
+    <div class="vn-rationale reveal">
+      <p class="cs-body">The previous Vincenzo's logo wasn't broken — it was trusted, recognized, and carried sixty years of loyalty. The goal was never to replace it but to refine it. The updated identity keeps everything that made the original work. Vinnie can be your friend, not the founder of the stuff. He is someone that is always there — as welcoming as sitting down for dinner with Nonna.</p>
+    </div>
+  </div>
+
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/logo-explainer.png" alt="Logo rationale — nonna, love, Italy, vincenzo's" loading="lazy" />
+  </div>
+
+  <div class="container">
+    <div class="vn-rationale reveal">
+      <p class="cs-body">The apostrophe was chosen to keep Vincenzo himself in the logo — his possession, his store. Then the shape revealed something more: a person. Nonna. Nonna loves you, so love is in it. Place it on a map of Italy, and the small version of the Vinnie's logo is complete.</p>
+    </div>
+  </div>
+
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/logo-big-small.png" alt="Vinnie's logo — big and small versions" loading="lazy" />
+  </div>
+
+  <!-- MERCH MOCKUPS -->
+  <!-- Bag + Tshirt: two half-width squares -->
+  <div class="vn-merch-halves reveal">
+    <div class="vn-merch-half">
+      <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/bag1small.webp" alt="Vinnie's branded bag" loading="lazy" />
+    </div>
+    <div class="vn-merch-half">
+      <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/tshirtsmall.webp" alt="Vinnie's t-shirt" loading="lazy" />
+    </div>
+  </div>
+
+  <!-- Interior — full bleed -->
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/inside-sittingarea.webp" alt="Vinnie's store interior" loading="lazy" />
+  </div>
+
+  <!-- Mug — full bleed -->
+  <div class="vn-slide reveal">
+    <img src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/mugmockups.webp" alt="Vinnie's mug mockups" loading="lazy" />
+  </div>
+
+  <!-- SOCIAL VIDEOS -->
+  <div class="container">
+    <div class="vn-social reveal">
+      <div class="cs-section-label">Social Media Strategy</div>
+      <p class="cs-body" style="max-width:640px;margin-bottom:48px;">Three AI-generated videos targeting people who've never heard of Vinnie's — showing the space, the products, and the feeling. No hard sell. Just proof it's worth stepping inside.</p>
+
+      <!-- Videos 1 + 2: landscape side by side -->
+      <div class="vn-videos-landscape">
+        <div class="vn-video-landscape">
+          <video controls preload="none" playsinline>
+            <source src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/VIDEO1-FINISHED.mp4" type="video/mp4" />
+          </video>
+        </div>
+        <div class="vn-video-landscape">
+          <video controls preload="none" playsinline>
+            <source src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/VIDEO2_1.mp4" type="video/mp4" />
+          </video>
+        </div>
+      </div>
+
+      <!-- Video 3: portrait, centered -->
+      <div class="vn-video-portrait-wrap">
+        <video controls preload="none" playsinline class="vn-video-portrait">
+          <source src="https://cdn.leojenkins.ca/portfolio/projects/vinnies/video%203_1.mp4" type="video/mp4" />
+        </video>
+      </div>
+
+    </div>
+
+    <!-- LINKS -->
+    <div class="cs-links reveal">
+      <a href="https://new.express.adobe.com/publishedV2/urn:aaid:sc:US:870a507a-ee09-4da4-8378-a4d115f34f04?promoid=Y69SGM5H&mv=other" target="_blank" class="cs-link cs-link-primary">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5l5 5v13a2 2 0 01-2 2z"/></svg>
+        View Process Work
+      </a>
+      <a href="https://cdn.leojenkins.ca/portfolio/projects/vinnies/FINAL%20VINNIES%20PITCH.pdf" target="_blank" class="cs-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" width="16" height="16"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
+        Full Pitch PDF
+      </a>
+    </div>
+
+  </div><!-- /container -->
 
 </div>
 
@@ -438,13 +863,12 @@
     <div class="page-hero">
       <div class="page-hero-inner">
         <div class="page-title-wrap">
-          <div class="section-label">Business</div>
-          <h1 class="display-xl reveal">My<br>Ventures</h1>
+          <div class="section-label">Ventures</div>
+          <h1 class="display-xl reveal">Built,<br>Not<br>Assigned.</h1>
         </div>
         <p class="page-hero-desc reveal reveal-delay-2">
-          Alongside design work, I build and operate marketing businesses —
-          applying systems thinking and automation to grow revenue for
-          contractors and small businesses.
+          Outside of coursework, I've incorporated a company and run a service
+          business from scratch. Both taught me things a classroom can't.
         </p>
       </div>
     </div>
@@ -464,69 +888,48 @@
               <span style="font-family:var(--font-display);font-size:64px;letter-spacing:0.02em;text-transform:uppercase;color:var(--white);line-height:1;">OUTDONE</span>
             </div>
             <div style="font-family:var(--font-display);font-size:22px;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);margin-bottom:28px;">MARKETING</div>
-            <p style="font-style:italic;font-family:var(--font-serif);font-size:17px;color:var(--dim);margin-bottom:32px;line-height:1.5;">"Revenue systems for contractors who are tired of word-of-mouth."</p>
             <p class="venture-body">
-              Outdone Marketing is an Alberta-incorporated agency specializing in database
-              reactivation (DBR) and outbound marketing for contractors and small businesses.
-              We build automated lead generation and reactivation systems using GoHighLevel,
-              n8n, and multi-channel outreach — helping roofers, exterior service companies,
-              and home service businesses convert dormant leads into booked jobs.
+              Outdone Marketing is a B2B marketing agency I built to deliver real results for
+              contractors. The actual work: running Meta ad campaigns, building client websites,
+              setting up GoHighLevel pipelines for lead capture and follow-up automation, and
+              doing the outbound myself — cold SMS, cold calls, and cold email to get the first
+              clients in the door.
             </p>
             <p class="venture-body">
-              Current focus: cold outbound to Canadian roofing contractors using review-blast
-              offers as proof-of-concept, with a 14-day free trial funnel and SMS/cold email
-              sequences targeting Google Business Profile data.
+              Every part of the sales cycle was hands-on. Writing the ad creative, building the
+              landing page, handling the inbound lead, closing the call, then delivering the
+              work. That combination of doing the marketing and the selling at the same time
+              sharpened both faster than anything else could have.
             </p>
-            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px;">
-              <span class="tag tag-blue">Database Reactivation</span>
-              <span class="tag">Cold Email</span>
-              <span class="tag">SMS Marketing</span>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:32px;">
+              <span class="tag tag-blue">Meta Ads</span>
               <span class="tag">GoHighLevel</span>
-              <span class="tag">n8n Automation</span>
-              <span class="tag">Lead Generation</span>
+              <span class="tag">Website Builds</span>
+              <span class="tag">Cold Calling</span>
+              <span class="tag">Cold SMS</span>
+              <span class="tag">Cold Email</span>
+              <span class="tag">B2B Sales</span>
             </div>
-            <a href="mailto:hello@outdonemarketing.com" class="btn btn-primary">
-              Get In Touch
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17L17 7M17 7H7M17 7v10"/></svg>
-            </a>
           </div>
-          <div>
-            <div class="venture-metrics">
-              <div class="metric-item">
-                <div class="metric-num">CA</div>
-                <div class="metric-label">Market Focus</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-num">DBR</div>
-                <div class="metric-label">Core Service</div>
-              </div>
-              <div class="metric-item">
-                <div class="metric-num">B2B</div>
-                <div class="metric-label">Client Type</div>
-              </div>
-            </div>
-            <div style="margin-top:32px;padding:32px;background:var(--surface2);border:1px solid var(--border);">
-              <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dimmer);margin-bottom:20px;">Core Services</div>
+          <div style="display:flex;flex-direction:column;gap:2px;">
+            <div style="padding:32px;background:var(--surface2);border:1px solid var(--border);">
+              <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dimmer);margin-bottom:20px;">What this demonstrates</div>
               <div style="display:flex;flex-direction:column;gap:0;">
-                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
-                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
-                  <div style="font-size:13px;color:var(--white);">Database Reactivation Campaigns</div>
+                <div style="padding:16px 0;border-bottom:1px solid var(--border);">
+                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Paid media execution</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.6;">Built and managed Meta ad campaigns end-to-end — creative, targeting, budget, and iteration.</div>
                 </div>
-                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
-                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
-                  <div style="font-size:13px;color:var(--white);">Cold Outbound Systems</div>
+                <div style="padding:16px 0;border-bottom:1px solid var(--border);">
+                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Full-stack marketing</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.6;">Designed and built client websites, set up GHL automations, and ran multi-channel outbound simultaneously.</div>
                 </div>
-                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
-                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
-                  <div style="font-size:13px;color:var(--white);">Google Business Profile Optimization</div>
+                <div style="padding:16px 0;border-bottom:1px solid var(--border);">
+                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Real sales experience</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.6;">Cold called, cold texted, and cold emailed to acquire clients — then closed them on the phone.</div>
                 </div>
-                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;border-bottom:1px solid var(--border);">
-                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
-                  <div style="font-size:13px;color:var(--white);">Review Generation &amp; Management</div>
-                </div>
-                <div style="display:flex;align-items:center;gap:16px;padding:14px 0;">
-                  <div style="width:6px;height:6px;border-radius:50%;background:var(--blue);flex-shrink:0;"></div>
-                  <div style="font-size:13px;color:var(--white);">CRM Setup &amp; Automation (GHL)</div>
+                <div style="padding:16px 0;">
+                  <div style="font-size:13px;color:var(--white);margin-bottom:4px;">End-to-end ownership</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.6;">Strategy, ads, website, outbound, sales — every part of the funnel owned by one person.</div>
                 </div>
               </div>
             </div>
@@ -540,47 +943,45 @@
 
         <div style="display:grid;grid-template-columns:1fr 1fr;gap:80px;align-items:start;position:relative;">
           <div>
-            <div class="venture-type">Field Service Operations</div>
+            <div class="venture-type">Service Business · Calgary, AB</div>
             <div style="margin-top:12px;margin-bottom:8px;">
               <span style="font-family:var(--font-display);font-size:64px;letter-spacing:0.02em;text-transform:uppercase;color:var(--white);line-height:1;">TRP</span>
             </div>
             <div style="font-family:var(--font-display);font-size:22px;letter-spacing:0.04em;text-transform:uppercase;color:var(--blue);margin-bottom:28px;">MAINTENANCE</div>
-            <p style="font-style:italic;font-family:var(--font-serif);font-size:17px;color:var(--dim);margin-bottom:32px;line-height:1.5;">"Where operational discipline meets field execution."</p>
             <p class="venture-body">
-              TRP Maintenance (formerly TRP Build Co) was a residential maintenance and
-              field service operation built to establish systems for client acquisition,
-              quoting, scheduling, and delivery. Operating as the hands-on precursor to
-              Outdone Marketing, it provided the real-world feedback loop needed to build
-              effective outbound and reactivation systems.
+              Before university, I built and ran a residential and commercial exterior cleaning
+              company in Calgary from the ground up. No partners, no funding, no one to hand
+              things off to. I did the door-to-door sales, wrote the quotes, managed the
+              schedule, showed up, and delivered the work.
             </p>
             <p class="venture-body">
-              The processes, scripts, and frameworks developed through TRP directly informed
-              Outdone's current service offerings — particularly around lead follow-up
-              sequences and contractor-specific sales language.
+              What it actually taught me: how to sell something to a stranger, how to earn
+              trust fast, how to handle a job that goes wrong, and how to keep showing up when
+              it's easier not to. The skills that came out of it — sales instinct, operational
+              discipline, customer communication — are the ones that don't show up on a
+              transcript but matter every day at work.
             </p>
-            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-bottom:36px;">
-              <span class="tag">Field Operations</span>
-              <span class="tag">Systems Building</span>
-              <span class="tag">Client Acquisition</span>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;margin-top:32px;">
+              <span class="tag">Self-funded</span>
+              <span class="tag">Solo-operated</span>
+              <span class="tag">Direct Sales</span>
               <span class="tag">Calgary, AB</span>
             </div>
           </div>
           <div style="padding:40px;background:var(--surface2);border:1px solid var(--border);position:relative;overflow:hidden;">
-            <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dimmer);margin-bottom:24px;">Key Learnings</div>
-            <div style="display:flex;flex-direction:column;gap:20px;">
-              <div>
-                <div style="font-family:var(--font-display);font-size:20px;color:var(--white);margin-bottom:4px;">Client Reactivation</div>
-                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Dormant clients respond 3–5x better to personalized SMS than email — insight now core to DBR methodology at Outdone.</div>
+            <div style="font-size:10px;letter-spacing:0.2em;text-transform:uppercase;color:var(--dimmer);margin-bottom:24px;">What this demonstrates</div>
+            <div style="display:flex;flex-direction:column;gap:0;">
+              <div style="padding:16px 0;border-bottom:1px solid var(--border);">
+                <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Real sales experience</div>
+                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Cold-acquired customers door-to-door. No warm leads, no referrals to start — just showing up and selling.</div>
               </div>
-              <div style="width:100%;height:1px;background:var(--border);"></div>
-              <div>
-                <div style="font-family:var(--font-display);font-size:20px;color:var(--white);margin-bottom:4px;">Outbound Scripts</div>
-                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Contractor-specific language and objection handling built from real sales calls — no fluff, just booked jobs.</div>
+              <div style="padding:16px 0;border-bottom:1px solid var(--border);">
+                <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Operational ownership</div>
+                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Managed every moving part — scheduling, quoting, delivery, follow-up — without a team or manager.</div>
               </div>
-              <div style="width:100%;height:1px;background:var(--border);"></div>
-              <div>
-                <div style="font-family:var(--font-display);font-size:20px;color:var(--white);margin-bottom:4px;">Systems Over Services</div>
-                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Pivoting from delivery to building the system that delivers — the foundational philosophy behind Outdone.</div>
+              <div style="padding:16px 0;">
+                <div style="font-size:13px;color:var(--white);margin-bottom:4px;">Work ethic</div>
+                <div style="font-size:12px;color:var(--dim);line-height:1.6;">Built something real from nothing while being a student. That's not a course project — it's a choice.</div>
               </div>
             </div>
           </div>
@@ -593,10 +994,11 @@
   <footer style="margin-top:120px;">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <span class="footer-copy">© 2026 Leo Jenkins + Outdone Marketing Ltd. All rights reserved.</span>
         <div class="footer-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://www.instagram.com/leojenkins_/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/leojenkins05/" target="_blank">LinkedIn</a>
+          <a href="mailto:leo@leojenkins.ca">Email</a>
         </div>
       </div>
     </div>
@@ -619,16 +1021,16 @@
         <!-- SIDEBAR -->
         <div>
           <div class="about-photo-frame">
-            <div class="about-photo-placeholder">L</div>
+            <img src="https://cdn.leojenkins.ca/portfolio/leo.jpeg" alt="Leo Jenkins" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;" />
           </div>
           <div class="about-sidebar-name">
-            Leo<span>Olier</span>
+            Leo<span>Jenkins</span>
           </div>
           <ul class="about-contact-list">
             <li>GBDA · University of Waterloo</li>
-            <li>3rd Year · Co-op Fall 2026</li>
+            <li>2nd Year · Co-op Fall 2026</li>
             <li>Calgary, AB / Waterloo, ON</li>
-            <li>Founder, Outdone Marketing</li>
+            <li>leo@leojenkins.ca</li>
             <li>Available for freelance</li>
           </ul>
           <div style="margin-top:32px;display:flex;flex-direction:column;gap:12px;">
@@ -650,27 +1052,31 @@
           </h2>
           <div class="divider-blue"></div>
           <p>
-            I'm a third-year Global Business and Digital Arts student at the University
-            of Waterloo — a program that blends UX design, business strategy, and
-            digital media. My work lives at the intersection of how things look and
-            how things work.
+            I've always been someone who likes making things. When I was younger it was random
+            projects, little experiments, videos, small businesses with friends — anything that
+            let me build something from nothing. I grew up in Calgary so most of my life outside
+            of work has been spent around mountains, road trips, and trying to squeeze in time
+            outdoors. Late night work sessions are a regular thing too.
           </p>
           <p>
-            Outside of school, I run Outdone Marketing — an Alberta-incorporated agency
-            building automated outbound and reactivation systems for contractors across
-            Canada. I'm hands-on with GoHighLevel, n8n, Supabase, and cold outreach
-            infrastructure, which gives my design work an unusually operational edge.
+            As I got older, that turned into a weird mix of interests: brand design, web
+            layouts, marketing psychology, fast websites, cleaner systems, and honestly just
+            making things that look good and work properly. I love good typography, quiet
+            design, and anything that feels intentional. I also like understanding how things
+            function behind the scenes — it's satisfying to build something that feels simple
+            to the user but has a full engine running underneath it.
           </p>
           <p>
-            I'm drawn to projects with real stakes: brand redesigns that need to move
-            product, apps that need to retain users, and systems that need to scale
-            without breaking. I care about the outcome, not just the output.
+            I'm in GBDA at the University of Waterloo now, and most of what I do there connects
+            back to the stuff I already loved building. Design, tech, UX, media, business — and
+            every project is an excuse to create something real instead of just completing an
+            assignment. I believe design only matters if it does something — moves product,
+            builds trust, or solves a real problem worth solving.
           </p>
-          <p>
-            When I'm not designing or building systems, I'm cooking with ancestral
-            nutrition principles, running a homelab media server, or trying to improve
-            my chess game from the beginner ranks.
-          </p>
+          <blockquote style="margin:28px 0;padding:20px 24px;border-left:2px solid var(--blue);background:var(--surface2);">
+            <p style="font-family:var(--font-serif);font-style:italic;font-size:16px;color:var(--dim);line-height:1.6;margin:0 0 8px;">"I have no special talent, I am only passionately curious."</p>
+            <cite style="font-size:10px;letter-spacing:0.14em;text-transform:uppercase;color:var(--dimmer);">— Albert Einstein</cite>
+          </blockquote>
 
           <!-- SKILLS -->
           <div class="skills-matrix" style="margin-top:56px;">
@@ -702,48 +1108,59 @@
               <span class="skill-level">80%</span>
             </div>
             <div class="skill-row">
-              <span class="skill-name">Marketing Systems</span>
-              <div class="skill-bar-wrap"><div class="skill-bar" style="width:88%;"></div></div>
-              <span class="skill-level">88%</span>
-            </div>
-            <div class="skill-row">
-              <span class="skill-name">Automation (n8n)</span>
-              <div class="skill-bar-wrap"><div class="skill-bar" style="width:75%;"></div></div>
-              <span class="skill-level">75%</span>
-            </div>
-            <div class="skill-row">
-              <span class="skill-name">AI Tools</span>
+              <span class="skill-name">Digital Marketing</span>
               <div class="skill-bar-wrap"><div class="skill-bar" style="width:85%;"></div></div>
               <span class="skill-level">85%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">Framer / WordPress</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:80%;"></div></div>
+              <span class="skill-level">80%</span>
+            </div>
+            <div class="skill-row">
+              <span class="skill-name">FB Ads / Google Ads</span>
+              <div class="skill-bar-wrap"><div class="skill-bar" style="width:78%;"></div></div>
+              <span class="skill-level">78%</span>
             </div>
           </div>
 
           <!-- EDUCATION + EXPERIENCE -->
           <div style="margin-top:72px;">
+            <div class="section-label" style="margin-bottom:32px;">Education</div>
+            <div style="display:flex;flex-direction:column;gap:0;margin-bottom:56px;">
+              <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2024 — Apr 2028</div>
+                <div>
+                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">UNIVERSITY OF WATERLOO</div>
+                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Honours BA, Global Business &amp; Digital Arts · Minor in Economics</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">2nd year. GPA 4.0. GBDA Society (Finance Coordinator) · UWaterloo Strength Club (Marketing Executive &amp; Powerlifting Captain).</div>
+                </div>
+              </div>
+            </div>
             <div class="section-label" style="margin-bottom:32px;">Experience</div>
             <div style="display:flex;flex-direction:column;gap:0;">
               <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
-                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2024 — Present</div>
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">Apr 2024 — Aug 2025</div>
                 <div>
-                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">OUTDONE MARKETING</div>
-                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Founder</div>
-                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">DBR and outbound marketing agency. Built from scratch — services, systems, client acquisition, delivery.</div>
+                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">TRP BUILD CO.</div>
+                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Sales · Marketing · Project Manager</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">Qualified leads, quoted, and sold projects ranging $20K–$75K. Grew into project management overseeing jobs independently. Built marketing campaigns and landing pages above and beyond job requirements.</div>
                 </div>
               </div>
               <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
-                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2023 — 2024</div>
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">Jun 2019 — Aug 2024</div>
+                <div>
+                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">THE ESTATES YARD CARE</div>
+                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Crew Lead</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">Led a 10-person crew on commercial site maintenance. Responsible for hiring, scheduling, managing the team, and reporting progress to employers and clients. Built strong leadership and unsupervised accountability skills.</div>
+                </div>
+              </div>
+              <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
+                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">Present</div>
                 <div>
                   <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">TRP MAINTENANCE</div>
                   <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Founder &amp; Operator</div>
-                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">Field service operation. Built client acquisition and delivery systems that informed Outdone's methodology.</div>
-                </div>
-              </div>
-              <div style="display:grid;grid-template-columns:140px 1fr;gap:32px;padding:24px 0;border-top:1px solid var(--border);">
-                <div style="font-size:11px;color:var(--dimmer);padding-top:4px;">2022 — Present</div>
-                <div>
-                  <div style="font-family:var(--font-display);font-size:22px;color:var(--white);margin-bottom:4px;">UNIVERSITY OF WATERLOO</div>
-                  <div style="font-size:11px;color:var(--blue);letter-spacing:0.12em;text-transform:uppercase;margin-bottom:8px;">Global Business &amp; Digital Arts — GBDA</div>
-                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">3rd year. Focus on UX design, digital media, business strategy, and project management.</div>
+                  <div style="font-size:12px;color:var(--dim);line-height:1.7;">Calgary-based exterior cleaning company. Window washing, pressure washing, and seasonal surface maintenance — residential and commercial.</div>
                 </div>
               </div>
             </div>
@@ -756,11 +1173,11 @@
   <footer>
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <span class="footer-copy">© 2026 Leo Jenkins + Outdone Marketing Ltd. All rights reserved.</span>
         <div class="footer-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
-          <a href="mailto:hello@example.com">Email</a>
+          <a href="https://www.instagram.com/leojenkins_/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/leojenkins05/" target="_blank">LinkedIn</a>
+          <a href="mailto:leo@leojenkins.ca">Email</a>
         </div>
       </div>
     </div>
@@ -781,15 +1198,15 @@
           Let's<br>Talk<br><span>.</span>
         </h1>
         <p style="font-size:14px;line-height:1.85;color:var(--dim);max-width:400px;" class="reveal reveal-delay-2">
-          Whether you're looking for a co-op student for Fall 2026, a freelance
-          designer for your next project, or marketing help for your contracting
-          business — I'd love to hear from you.
+          Whether you're hiring for a Fall 2026 co-op, looking for a freelance
+          designer, or want to collaborate on something — feel free to reach out.
+          I try to respond to everything.
         </p>
 
         <div class="contact-info reveal reveal-delay-3">
           <div class="contact-info-item">
             <span class="contact-info-label">Email</span>
-            <span class="contact-info-value">hello@example.com</span>
+            <span class="contact-info-value">leo@leojenkins.ca</span>
           </div>
           <div class="contact-info-item">
             <span class="contact-info-label">Location</span>
@@ -806,13 +1223,13 @@
         </div>
 
         <div style="display:flex;gap:16px;margin-top:40px;" class="reveal reveal-delay-4">
-          <a href="https://linkedin.com" target="_blank" class="btn btn-outline" style="gap:8px;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
-            LinkedIn
+          <a href="https://www.instagram.com/leojenkins_/" target="_blank" class="btn btn-outline" style="gap:8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.5" fill="currentColor"/></svg>
+            Instagram
           </a>
-          <a href="https://github.com" target="_blank" class="btn btn-outline" style="gap:8px;">
-            <svg viewBox="0 0 24 24" fill="currentColor" width="14" height="14"><path d="M12 2C6.477 2 2 6.484 2 12.017c0 4.425 2.865 8.18 6.839 9.504.5.092.682-.217.682-.483 0-.237-.008-.868-.013-1.703-2.782.605-3.369-1.343-3.369-1.343-.454-1.158-1.11-1.466-1.11-1.466-.908-.62.069-.608.069-.608 1.003.07 1.531 1.032 1.531 1.032.892 1.53 2.341 1.088 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.113-4.555-4.951 0-1.093.39-1.988 1.029-2.688-.103-.253-.446-1.272.098-2.65 0 0 .84-.27 2.75 1.026A9.564 9.564 0 0112 6.844c.85.004 1.705.115 2.504.337 1.909-1.296 2.747-1.027 2.747-1.027.546 1.379.202 2.398.1 2.651.64.7 1.028 1.595 1.028 2.688 0 3.848-2.339 4.695-4.566 4.943.359.309.678.92.678 1.855 0 1.338-.012 2.419-.012 2.747 0 .268.18.58.688.482A10.019 10.019 0 0022 12.017C22 6.484 17.522 2 12 2z"/></svg>
-            GitHub
+          <a href="https://www.linkedin.com/in/leojenkins05/" target="_blank" class="btn btn-outline" style="gap:8px;">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" width="14" height="14"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            LinkedIn
           </a>
         </div>
       </div>
@@ -835,8 +1252,8 @@
             <option value="" disabled selected>Select one…</option>
             <option>Co-op / Internship Opportunity</option>
             <option>Freelance Design Project</option>
-            <option>Marketing Services (Outdone)</option>
-            <option>Collaboration / Other</option>
+            <option>Collaboration / Partnership</option>
+            <option>Other</option>
           </select>
         </div>
         <div class="form-row">
@@ -860,10 +1277,10 @@
   <footer style="margin-top:0;">
     <div class="container">
       <div class="footer-inner">
-        <span class="footer-copy">© 2026 Leo. All rights reserved.</span>
+        <span class="footer-copy">© 2026 Leo Jenkins + Outdone Marketing Ltd. All rights reserved.</span>
         <div class="footer-links">
-          <a href="https://linkedin.com" target="_blank">LinkedIn</a>
-          <a href="https://github.com" target="_blank">GitHub</a>
+          <a href="https://www.instagram.com/leojenkins_/" target="_blank">Instagram</a>
+          <a href="https://www.linkedin.com/in/leojenkins05/" target="_blank">LinkedIn</a>
         </div>
       </div>
     </div>
