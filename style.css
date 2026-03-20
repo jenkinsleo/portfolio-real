@@ -926,25 +926,6 @@ section {
   counter-increment: venture-count;
 }
 
-/* ── SECTION LABEL REVEAL ─────────────────────────────────── */
-.section-label {
-  position: relative;
-  overflow: hidden;
-}
-.section-label::after {
-  content: '';
-  position: absolute;
-  inset: 0;
-  background: var(--bg);
-  transform: scaleX(1);
-  transform-origin: left;
-  transition: transform 0.6s 0.1s ease-out;
-}
-.page.active .section-label::after,
-.section-label.no-mask::after {
-  transform: scaleX(0);
-  transform-origin: right;
-}
 
 /* ── DISPLAY HEADLINE ENTRANCE ────────────────────────────── */
 .display-xl, .display-lg {
@@ -978,16 +959,6 @@ section {
 .filter-btn:hover { transform: translateY(-2px); }
 .filter-btn.active { transform: none; }
 
-/* ── NAV LINK ACTIVE INDICATOR SLIDE ─────────────────────── */
-.nav-indicator {
-  display: block;
-  height: 1px;
-  background: var(--blue);
-  width: 0;
-  transition: width 0.3s ease-out;
-  margin-top: 2px;
-}
-.nav-links a.active .nav-indicator { width: 100%; }
 
 /* ── HOME CTA ─────────────────────────────────────────────── */
 .home-cta {
@@ -1541,20 +1512,24 @@ section {
 /* ── FLOATING CLOSE BUTTON ────────────────────────────────── */
 .cs-close-btn {
   position: fixed;
-  top: calc(var(--nav-h) / 2 - 18px);
+  top: calc(var(--nav-h) + 16px);
   right: 40px;
   z-index: 500;
-  width: 36px; height: 36px;
+  height: 34px;
+  padding: 0 16px;
   border: 1px solid rgba(255,255,255,0.18);
-  border-radius: 50%;
+  border-radius: 2px;
   display: none;
   align-items: center;
-  justify-content: center;
+  gap: 8px;
   cursor: none;
-  background: rgba(10,10,12,0.75);
+  background: rgba(10,10,12,0.85);
   backdrop-filter: blur(10px);
   color: rgba(240,237,232,0.6);
-  transition: background 0.2s, border-color 0.2s, color 0.2s, transform 0.3s ease-out;
+  font-size: 10px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  transition: background 0.2s, border-color 0.2s, color 0.2s;
 }
 
 body.has-case-study .cs-close-btn { display: flex; }
@@ -1563,7 +1538,6 @@ body.has-case-study .cs-close-btn { display: flex; }
   background: var(--blue);
   border-color: var(--blue);
   color: var(--white);
-  transform: rotate(90deg);
 }
 
 .cs-title-block { padding-bottom: 48px; }
